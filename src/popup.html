@@ -8,14 +8,109 @@
 
     <!-- Load styles -->
     <link rel="stylesheet" href="popup.css" />
+    <script src="deneme.js" defer></script>
   </head>
 
   <body>
-    <div class="container">
-      <h1>Transformers.js</h1>
-      <h2>Run 🤗 Transformers in a Browser Extension!</h2>
-      <input id="text" placeholder="Enter text here" />
-      <pre id="output"></pre>
-    </div>
+    <main class="container">
+      <h1>HateBlock</h1>
+      <h2>Censor hateful comments</h2>
+      <!-- <pre id="output"></pre> -->
+
+      <section class="range-bar-container">
+        <div class="range-bar-wrapper">
+          <label class="range-bar-text">Love Value</label>
+          <div class="container2">
+            <input
+              type="range"
+              class="range-bar"
+              id="range-bar-love"
+              value="0"
+              min="0"
+              max="100"
+            />
+            <label class="range-bar-value" id="love-value">0%</label>
+          </div>
+        </div>
+
+        <div class="range-bar-wrapper">
+          <label class="range-bar-text">Anger Value</label>
+          <div class="container2">
+            <input
+              type="range"
+              class="range-bar"
+              id="range-bar-anger"
+              value="0"
+              min="0"
+              max="100"
+            />
+            <label class="range-bar-value" id="anger-value">0%</label>
+          </div>
+        </div>
+
+        <div class="range-bar-wrapper">
+          <label class="range-bar-text">Joy Value</label>
+          <div class="container2">
+            <input
+              type="range"
+              class="range-bar"
+              id="range-bar-joy"
+              value="0"
+              min="0"
+              max="100"
+            />
+            <label class="range-bar-value" id="joy-value">0%</label>
+          </div>
+        </div>
+
+        <div class="range-bar-wrapper">
+          <label class="range-bar-text">Saddnes Value</label>
+          <div class="container2">
+            <input
+              type="range"
+              class="range-bar"
+              id="range-bar-saddnes"
+              value="0"
+              min="0"
+              max="100"
+            />
+            <label class="range-bar-value" id="saddnes-value">0%</label>
+          </div>
+        </div>
+
+        <div class="range-bar-wrapper">
+          <label class="range-bar-text">Surprise Value</label>
+          <div class="container2">
+            <input
+              type="range"
+              class="range-bar"
+              id="range-bar-suprise"
+              value="0"
+              min="0"
+              max="100"
+            />
+            <label class="range-bar-value" id="suprise-value">0%</label>
+          </div>
+        </div>
+
+        <div class="range-bar-wrapper">
+          <label for="range-bar-fear" class="range-bar-text">Fear Value</label>
+          <div class="container2">
+            <input
+              type="range"
+              class="range-bar"
+              id="range-bar-fear"
+              value="0"
+              min="0"
+              max="100"
+            />
+            <label for="range-bar-fear" class="range-bar-value" id="fear-value"
+              >0%</label
+            >
+          </div>
+        </div>
+        <button class="submit-btn" id="submitBtn">Submit</button>
+      </section>
+    </main>
   </body>
 </html>
