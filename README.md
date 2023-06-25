@@ -22,7 +22,7 @@ Go to https://huggingface.co/SamLowe/roberta-base-go_emotions/tree/main and down
 ## Convert Model to ONNX Runtime
 
 example usage for SamLowe/roberta-base-go_emotions:
-`python -m scripts.convert --quantize --model_id SamLowe/roberta-base-go_emotions`
+`python -m convert_model_to_onnx --quantize --model_id SamLowe/roberta-base-go_emotions`
 files will be saved to ./models/
 also dont forget to do: python -m pip install optimum
 After this runs put the `model.onnx` and `model_quantized.onnx` files in `models/SamLowe/roberta-base-go_emotions` into `public/models/SamLowe/roberta-base-go_emotions/onnx`
