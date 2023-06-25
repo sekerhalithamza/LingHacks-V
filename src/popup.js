@@ -15,11 +15,11 @@ const submitBtn = document.getElementById("submitBtn");
 submitBtn.addEventListener("click", () => {
   submitBtn.style.backgroundColor = "#4ce099";
   emotionArr = {
-    love: inputValues[0].innerText.replace("%", ""),
-    anger: inputValues[1].innerText.replace("%", ""),
-    joy: inputValues[2].innerText.replace("%", ""),
-    sadness: inputValues[3].innerText.replace("%", ""),
-    suprise: inputValues[4].innerText.replace("%", ""),
-    fear: inputValues[5].innerText.replace("%", ""),
+    love: Number(inputValues[0].innerText.replace("%", "")) / 100 ,
+    anger: Number(inputValues[1].innerText.replace("%", "")) / 100,
+    joy: Number(inputValues[2].innerText.replace("%", "")) / 100,
+    sadness: Number(inputValues[3].innerText.replace("%", "")) / 100,
+    suprise: Number(inputValues[4].innerText.replace("%", "")) / 100,
+    fear: Number(inputValues[5].innerText.replace("%", "")) / 100,
   };
 });
