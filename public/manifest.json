@@ -15,5 +15,11 @@
   },
   "content_security_policy": {
     "extension_pages": "script-src 'self' 'wasm-unsafe-eval'"
-  }
+  },
+  "content_scripts": [
+    {
+      "js": ["block.js"],
+      "matches": ["https://www.youtube.com/*"]
+    }
+  ]
 }

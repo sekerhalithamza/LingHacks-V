@@ -22,5 +22,4 @@ submitBtn.addEventListener("click", () => {
     suprise: inputValues[4].innerText.replace("%", ""),
     fear: inputValues[5].innerText.replace("%", ""),
   };
-  console.log(emotionArr);
 });

@@ -39,4 +39,5 @@ if (typeof ServiceWorkerGlobalScope !== "undefined" && self instanceof ServiceWo
     // see https://stackoverflow.com/a/46628145 for more information
     return true;
   });
+  
 }
