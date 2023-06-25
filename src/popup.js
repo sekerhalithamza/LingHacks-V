@@ -1,13 +1,26 @@
-// This script handles interaction with the user interface, as well as handling
-// the communication between the main thread (UI) and the background thread (processing).
+const inputElements = document.getElementsByClassName("range-bar");
+const inputValues = document.getElementsByClassName("range-bar-value");
 
-const inputElement = document.getElementById("text");
-const outputElement = document.getElementById("output");
+var emotionArr = {};
 
-// 1. Send input data to the worker thread when it changes.
-inputElement.addEventListener("input", (event) => {
-  chrome.runtime.sendMessage(event.target.value, (response) => {
-    // 2. Handle results returned by the service worker (`background.js`) and update the UI.
-    outputElement.innerText = JSON.stringify(response, null, 2);
+for (const inputElement of inputElements) {
+  inputElement.addEventListener("input", () => {
+    const labelValue = inputElement.nextElementSibling;
+    labelValue.innerText = `${inputElement.value}%`;
   });
+}
+
+const submitBtn = document.getElementById("submitBtn");
+
+submitBtn.addEventListener("click", () => {
+  submitBtn.style.backgroundColor = "#4ce099";
+  emotionArr = {
+    love: inputValues[0].innerText.replace("%", ""),
+    anger: inputValues[1].innerText.replace("%", ""),
+    joy: inputValues[2].innerText.replace("%", ""),
+    sadness: inputValues[3].innerText.replace("%", ""),
+    suprise: inputValues[4].innerText.replace("%", ""),
+    fear: inputValues[5].innerText.replace("%", ""),
+  };
+  console.log(emotionArr);
 });
