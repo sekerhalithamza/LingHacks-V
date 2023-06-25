@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Transformers.js | Sample Browser Extension</title>
+    <title>HateBlock</title>
 
     <!-- Load styles -->
     <link rel="stylesheet" href="popup.css" />
@@ -14,6 +14,8 @@
     <main class="container">
       <h1>HateBlock</h1>
       <h2>Censor hateful comments</h2>
+
+      <div class="line"></div>
       <!-- <pre id="output"></pre> -->
 
       <section class="range-bar-container">
@@ -24,11 +26,11 @@
               type="range"
               class="range-bar"
               id="range-bar-love"
-              value="0"
+              value="100"
               min="0"
               max="100"
             />
-            <label class="range-bar-value" id="love-value">0%</label>
+            <label class="range-bar-value" id="love-value">100%</label>
           </div>
         </div>
 
@@ -39,11 +41,11 @@
               type="range"
               class="range-bar"
               id="range-bar-anger"
-              value="0"
+              value="100"
               min="0"
               max="100"
             />
-            <label class="range-bar-value" id="anger-value">0%</label>
+            <label class="range-bar-value" id="anger-value">100%</label>
           </div>
         </div>
 
@@ -54,11 +56,11 @@
               type="range"
               class="range-bar"
               id="range-bar-joy"
-              value="0"
+              value="100"
               min="0"
               max="100"
             />
-            <label class="range-bar-value" id="joy-value">0%</label>
+            <label class="range-bar-value" id="joy-value">100%</label>
           </div>
         </div>
 
@@ -69,11 +71,11 @@
               type="range"
               class="range-bar"
               id="range-bar-saddnes"
-              value="0"
+              value="100"
               min="0"
               max="100"
             />
-            <label class="range-bar-value" id="saddnes-value">0%</label>
+            <label class="range-bar-value" id="saddnes-value">100%</label>
           </div>
         </div>
 
@@ -84,11 +86,11 @@
               type="range"
               class="range-bar"
               id="range-bar-suprise"
-              value="0"
+              value="100"
               min="0"
               max="100"
             />
-            <label class="range-bar-value" id="suprise-value">0%</label>
+            <label class="range-bar-value" id="suprise-value">100%</label>
           </div>
         </div>
 
@@ -99,12 +101,12 @@
               type="range"
               class="range-bar"
               id="range-bar-fear"
-              value="0"
+              value="100"
               min="0"
               max="100"
             />
             <label for="range-bar-fear" class="range-bar-value" id="fear-value"
-              >0%</label
+              >100%</label
             >
           </div>
         </div>
