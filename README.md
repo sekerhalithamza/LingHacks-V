@@ -18,7 +18,7 @@ models/SamLowe/roberta-base-go_emotions
                           ├── tokenizer.json
                           ├── tokenizer_config.json
 
-Go to https://huggingface.co/SamLowe/roberta-base-go_emotions/tree/main and download the files above and put them in the folder `models/SamLowe/roberta-base-go_emotions` (create the folder if it doesn't exist)
+Go to https://huggingface.co/SamLowe/roberta-base-go_emotions/tree/main and download the files above and put them in the folder `public/models/SamLowe/roberta-base-go_emotions` (create the folder if it doesn't exist)
 ## Convert Model to ONNX Runtime
 
 example usage for SamLowe/roberta-base-go_emotions:
